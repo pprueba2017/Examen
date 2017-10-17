@@ -1,0 +1,66 @@
+﻿@model DiegoExamen1.Models.Venta
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Venta</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Total_Venta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Total_Venta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nom_Cliente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nom_Cliente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nom_Vendedor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nom_Vendedor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nom_Producto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nom_Producto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Precio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Precio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cantidad_Vendida)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cantidad_Vendida)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idVenta }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
